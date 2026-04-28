@@ -2,7 +2,6 @@ import os
 import subprocess
 import sys
 
-# 1. AUTO-INSTALADOR
 try:
     import yt_dlp
 except ImportError:
@@ -34,22 +33,19 @@ def mostrar_resoluciones_y_descargar(url):
 
     print("\n[🛡️] Forzando extracción de Clip... (Bypass de modo En Vivo)")
     
-    # OPCIONES PARA EVITAR EL ERROR DE "NOT LIVE"
     ydl_opts_info = {
         'quiet': True, 
         'no_warnings': True,
-        'noplaylist': True,           # <--- EVITA QUE BUSQUE EL CANAL ENTERO
+        'noplaylist': True,          
         'cookies_from_browser': 'chrome', 
         'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     }
 
     with yt_dlp.YoutubeDL(ydl_opts_info) as ydl:
         try:
-            # Extraer info ignorando errores de "Live"
             info = ydl.extract_info(url, download=False)
             formats = info.get('formats', [])
             
-            # Buscamos cualquier formato que sea video
             video_formats = [f for f in formats if f.get('vcodec') != 'none']
             
             if not video_formats:
@@ -94,10 +90,8 @@ def mostrar_resoluciones_y_descargar(url):
                 print("\n⚠️ Opción no válida.")
 
         except Exception as e:
-            # Si falla el extractor de Kick, intentamos el genérico
             print(f"\n⚠️ Reintentando con extractor genérico...")
             try:
-                # Intento de descarga directa para casos rebeldes
                 subprocess.call([sys.executable, "-m", "yt_dlp", "--cookies-from-browser", "chrome", "-o", f"{folder}/%(title)s.%(ext)s", url])
             except:
                 print(f"\n❌ Error final: {e}")
