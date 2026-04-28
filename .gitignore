@@ -1,0 +1,8 @@
+# Ignorar la carpeta de descargas de videos
+Descargas_KDLogic/
+
+# Ignorar el ejecutable de FFmpeg (muy pesado para GitHub)
+ffmpeg.exe
+
+# Ignorar archivos de caché temporales de Python
+__pycache__/

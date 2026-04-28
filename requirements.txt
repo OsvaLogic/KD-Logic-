@@ -1,0 +1,2 @@
+# Dependencias requeridas para KD-Logic Video Downloader
+yt-dlp[requests]
