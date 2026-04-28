@@ -15,6 +15,12 @@
 
 KD-Logic es una herramienta por consola desarrollada en Python diseñada para forzar la extracción y descarga de clips de plataformas como Kick y TikTok, haciendo bypass al modo "En Vivo" y permitiendo elegir la resolución deseada.
 
+## ✨ Características Principales
+
+- **Selección de Múltiples Calidades:** El script detecta todas las resoluciones disponibles del clip original y te permite elegir exactamente en qué calidad de video deseas descargarlo.
+- **Bypass "En Vivo":** Fuerza la extracción y descarga de clips incluso cuando la plataforma los bloquea o los marca como streams.
+- **Evasión de Restricciones:** Utiliza las cookies de tu navegador local para saltar bloqueos de región o de edad automáticamente.
+
 ## 📋 Requisitos Previos
 
 Para que el script funcione correctamente, necesitas tener instalado lo siguiente:
@@ -22,7 +28,7 @@ Para que el script funcione correctamente, necesitas tener instalado lo siguient
 1. **Python 3.7 o superior**: Asegúrate de marcar la opción "Add Python to PATH" durante la instalación.
 2. **Google Chrome**: El script extrae las cookies de tu navegador Chrome local para evitar bloqueos y restricciones de edad o región.
 3. **FFmpeg y FFprobe**: Necesarios para procesar, unir el video y el audio de alta calidad, y para la conversión de formatos. 
-   - Debes descargar **`ffmpeg.exe`** y **`ffprobe.exe`** y colocarlos **exactamente en la misma carpeta** que el archivo `KD-Logic.py` (la carpeta principal de tu descargador).
+   - Debes descargar **`ffmpeg.exe`** y **`ffprobe.exe`** y colocarlos en (Descargas_KD-Logic).
 
 ## 🚀 Instalación
 

@@ -1,0 +1,2 @@
+# Este archivo obliga a Git a subir esta carpeta aunque no tenga videos.
+# RECUERDA: Coloca ffmpeg.exe y ffprobe.exe aquí dentro.
