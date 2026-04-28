@@ -21,8 +21,8 @@ Para que el script funcione correctamente, necesitas tener instalado lo siguient
 
 1. **Python 3.7 o superior**: Asegúrate de marcar la opción "Add Python to PATH" durante la instalación.
 2. **Google Chrome**: El script extrae las cookies de tu navegador Chrome local para evitar bloqueos y restricciones de edad o región.
-3. **FFmpeg**: Necesario para unir el video y el audio de alta calidad, y para la conversión de formatos. 
-   - Debes descargar `ffmpeg.exe` y colocarlo **exactamente en la misma carpeta** que el archivo `KD-Logic.py`.
+3. **FFmpeg y FFprobe**: Necesarios para procesar, unir el video y el audio de alta calidad, y para la conversión de formatos. 
+   - Debes descargar **`ffmpeg.exe`** y **`ffprobe.exe`** y colocarlos **exactamente en la misma carpeta** que el archivo `KD-Logic.py` (la carpeta principal de tu descargador).
 
 ## 🚀 Instalación
 
